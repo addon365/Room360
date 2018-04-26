@@ -13,5 +13,10 @@
         android:icon="@drawable/ic_action_name"
         android:title="@string/unbooked"
         />
+    <item
+        android:id="@+id/action_Cleaning"
+        android:enabled="true"
+        android:icon="@drawable/ic_cleaning"
+        android:title="@string/cleaning" />
 
 </menu>

@@ -4,6 +4,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.addon.room360.fragments.BookedFragment;
+import com.addon.room360.fragments.PendingForcleaningFragment;
+import com.addon.room360.fragments.UnbookedFragment;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,14 +16,15 @@ import java.util.List;
  */
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
-    private final List<Booked> mFragmentList = new ArrayList<>();
+    private final List<Fragment> mFragmentList = new ArrayList<>();
 
     public ViewPagerAdapter(FragmentManager manager) {
         super(manager);
     }
+
     @Override
     public Fragment getItem(int position) {
-        return(Fragment)mFragmentList.get(position);
+        return mFragmentList.get(position);
     }
 
     @Override
@@ -27,8 +32,11 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         return mFragmentList.size();
     }
 
-    public void addFragment(Booked fragment) {
-        mFragmentList.add(fragment);
+    public void addFragment() {
+        mFragmentList.add(new BookedFragment());
+        mFragmentList.add(new UnbookedFragment());
+        mFragmentList.add(new PendingForcleaningFragment());
     }
+
 
 }

@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:orientation="horizontal"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
@@ -24,17 +24,20 @@
         android:layout_weight="6"
         android:layout_height="30sp"
         android:text="Date"
+        android:id="@+id/Date_Home"
+        android:fontFamily="serif-monospace"
         android:layout_gravity="center_vertical"
         android:textSize="22sp"
         android:layout_marginLeft="20dp"
         android:paddingLeft="10dp"/>
 
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="35sp"
+            android:id="@+id/Date_picker_home"
             android:layout_gravity="center_vertical"
-            android:text=">"
+            android:src="@drawable/ic_date"
             android:layout_weight="1"
             android:layout_marginRight="10dp"/>
 

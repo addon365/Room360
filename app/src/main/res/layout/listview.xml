@@ -2,16 +2,29 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/outline"
+        android:orientation="horizontal">
 <TextView
     android:layout_width="0dp"
     android:layout_height="35dp"
     android:layout_marginLeft="25dp"
-    android:layout_marginTop="20dp"
+    android:layout_gravity="center_vertical"
     android:layout_weight="2"
     android:text="101"
+
+    android:fontFamily="serif-monospace"
     android:id="@+id/roomText"
-    android:textSize="28dp"
+    android:textSize="28sp"
     />
 
 
@@ -20,22 +33,25 @@
     android:layout_height="35dp"
         android:id="@+id/ACtext"
     android:layout_marginLeft="25dp"
-    android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="serif-monospace"
     android:layout_weight="4"
     android:text="AC"
-    android:textSize="28dp"
+        android:textSize="28sp"
     />
     <TextView
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+
         android:layout_weight="2"
+        android:fontFamily="serif-monospace"
         android:text="3"
         android:id="@+id/captext"
-        android:textSize="28dp"
+        android:textSize="28sp"
         />
-
+    </LinearLayout>
 
 </LinearLayout>

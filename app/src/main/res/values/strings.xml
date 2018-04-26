@@ -2,5 +2,5 @@
     <string name="app_name">Room360</string>
     <string name="booked">booked</string>
     <string name="unbooked">Unbooked</string>
-
+    <string name="cleaning">Cleaning</string>
 </resources>
