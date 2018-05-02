@@ -1,6 +1,7 @@
 package com.addon.room360.fragments;
 
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,10 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.support.v4.app.Fragment;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.addon.room360.AddCusomer;
+import com.addon.room360.AddRoomActivity;
 import com.addon.room360.BookedAdapter;
 import com.addon.room360.BookedClass;
+import com.addon.room360.MainActivity;
 import com.addon.room360.R;
 
 import java.util.ArrayList;
@@ -58,7 +63,16 @@ public class BookedFragment extends Fragment {
         BookedAdapter adapter = new BookedAdapter(getContext(), arry);
         ListView list = view.findViewById(R.id.bookedlist);
         list.setAdapter(adapter);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(getActivity(), AddRoomActivity.class);
+                startActivity(i);
+            }
+        });
         return view;
+
+
     }
 
     public interface OnFragmentInteractionListener {

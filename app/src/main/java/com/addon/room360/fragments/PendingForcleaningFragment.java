@@ -1,13 +1,16 @@
 package com.addon.room360.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.addon.room360.AddRoomActivity;
 import com.addon.room360.BookedAdapter;
 import com.addon.room360.BookedClass;
 import com.addon.room360.R;
@@ -52,6 +55,15 @@ public class PendingForcleaningFragment extends Fragment {
         BookedAdapter adapter = new BookedAdapter(getContext(), arry);
         ListView list = view.findViewById(R.id.pending);
         list.setAdapter(adapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(getActivity(), AddRoomActivity.class);
+                startActivity(i);
+            }
+        });
+
         return view;
     }
 

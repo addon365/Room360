@@ -1,6 +1,23 @@
 <resources>
-    <string name="app_name">Room360</string>
+
     <string name="booked">booked</string>
     <string name="unbooked">Unbooked</string>
     <string name="cleaning">Cleaning</string>
+    <string name="app_name">"Room Booking "</string>
+    <string-array name="Room">
+        <item>Single Room</item>
+        <item>Double Room</item>
+        <item>Trible Room</item>
+
+    </string-array>
+
+    <string-array name="Proof">
+        <item>Aadhar</item>
+        <item>Driving Licence</item>
+        <item>Voter Id</item>
+
+    </string-array>
+    <string name="action_string">
+        Room Booking
+    </string>
 </resources>

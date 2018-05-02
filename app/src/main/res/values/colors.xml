@@ -6,4 +6,5 @@
     <color name="white">#FFFFFF</color>
     <color name="colorTextPrimary">#FFFFFF</color>
     <color name="navigation_icon_selction">#fde300</color>
+    <color name="grey">#757575</color>
 </resources>

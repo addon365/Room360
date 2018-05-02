@@ -74,6 +74,7 @@ bottomNavigationView = findViewById(R.id.bottom_navigation);
                         break;
                     case R.id.action_Cleaning:
                         viewPager.setCurrentItem(2);
+
                 }
 
                 return true;

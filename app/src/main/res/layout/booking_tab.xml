@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Tab_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/outline"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="Booking Date"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:id="@+id/bookcheck"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:id="@+id/book"
+            android:background="@android:color/transparent"
+            android:text="&gt;"
+            android:textSize="25sp"
+            android:textColor="@color/grey"
+            android:layout_weight=".5"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/outline"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="Planned Check in Date"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:text="&gt;"
+            android:id="@+id/plancheck"
+            android:textSize="25sp"
+            android:textColor="@color/grey"
+            android:layout_weight=".5"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="Check in Date"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:text="&gt;"
+            android:textSize="25sp"
+            android:id="@+id/checkIn"
+            android:textColor="@color/grey"
+            android:layout_weight=".5"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/outline"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="3"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="Check Out Date"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textSize="18sp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:text="&gt;"
+            android:id="@+id/checkOut"
+            android:textSize="25sp"
+            android:textColor="@color/grey"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adult"
+            android:textSize="25sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/Adult"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kids"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:id="@+id/Kids"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="2"
+            android:layout_below="@id/Adult"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="45dp"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:background="#BDBDBD"/>
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="2"
+            android:id="@+id/kids_text"
+            android:layout_below="@id/Kids"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:background="#BDBDBD"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kids_text"
+            android:text="Book Now"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:background="#0091EA"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+</LinearLayout>
