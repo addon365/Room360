@@ -122,4 +122,6 @@ bottomNavigationView = findViewById(R.id.bottom_navigation);
                 today.get(Calendar.YEAR), today.get(Calendar.MONTH), today.get(Calendar.DATE));
         datePickerDialog.show();
     }
+
+
 }

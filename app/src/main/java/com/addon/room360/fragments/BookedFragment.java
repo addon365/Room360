@@ -67,6 +67,7 @@ public class BookedFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), AddRoomActivity.class);
+
                 startActivity(i);
             }
         });

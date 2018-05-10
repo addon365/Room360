@@ -14,7 +14,7 @@
         android:layout_marginRight="15dp">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/booking_date"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="3"
@@ -40,6 +40,7 @@
             android:id="@+id/book"
             android:background="@android:color/transparent"
             android:text="&gt;"
+            android:clickable="true"
             android:textSize="25sp"
             android:textColor="@color/grey"
             android:layout_weight=".5"/>
@@ -70,6 +71,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:textSize="18sp"
+            android:id="@+id/PlannedCheckinDate"
             android:layout_weight="2"
             android:gravity="center_vertical"
 
@@ -80,6 +82,7 @@
             android:layout_height="60dp"
             android:background="@android:color/transparent"
             android:text="&gt;"
+            android:clickable="true"
             android:id="@+id/plancheck"
             android:textSize="25sp"
             android:textColor="@color/grey"
@@ -112,6 +115,7 @@
             android:layout_height="60dp"
             android:textSize="18sp"
             android:layout_weight="2"
+            android:id="@+id/checkindate"
             android:gravity="center_vertical"
 
 
@@ -152,6 +156,7 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:textSize="18sp"
+            android:id="@+id/checkcoutdate"
             android:layout_weight="2"
             android:gravity="center_vertical"
 

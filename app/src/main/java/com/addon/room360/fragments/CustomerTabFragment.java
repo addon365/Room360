@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.addon.room360.R;
 
-public class CustomerTabFragment extends android.support.v4.app.Fragment {
+public class CustomerTabFragment extends Fragment {
 
     public CustomerTabFragment (){
 
