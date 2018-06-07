@@ -18,6 +18,7 @@
             <android.support.design.widget.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="40dp" android:paddingLeft="15dp"
+                android:id="@+id/Add_customer_name"
                 android:inputType="textCapWords"
                 android:layout_marginLeft="10dp"
                 android:hint="Name"
@@ -31,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:hint="Address 1"
-
+            android:id="@+id/Add_Address_Line1"
             android:paddingLeft="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="25dp"
@@ -43,6 +44,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:id="@+id/Add_Add_Line2"
             android:hint="Address 2"
             android:paddingLeft="15dp"
             android:layout_marginLeft="10dp"
@@ -55,6 +57,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:id="@+id/Add_City"
             android:hint="Enter your city"
             android:paddingLeft="15dp"
             android:layout_marginLeft="10dp"
@@ -65,16 +68,20 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:hint="Enter Mobile Number"
-            android:inputType="number"
-            android:paddingLeft="15dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="25dp"
-            />
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Pincode"
+                android:inputType="number"
+
+                android:id="@+id/Add_Pin_Code"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                />
         </android.support.design.widget.TextInputLayout>
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,6 +103,7 @@
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:background="@drawable/outline_spinner"
+                android:id="@+id/Add_Spin_text"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="2dp"
                 android:gravity="center_vertical"
@@ -120,6 +128,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:id="@+id/Add_proof"
             android:hint="xxxx-xxxx-xxxx"
 
             android:paddingLeft="15dp"
@@ -128,6 +137,20 @@
             >
         </android.support.design.widget.TextInputEditText>
 
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/Add_Mobile"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="25dp"
+                />
         </android.support.design.widget.TextInputLayout>
         <RelativeLayout
             android:layout_width="match_parent"

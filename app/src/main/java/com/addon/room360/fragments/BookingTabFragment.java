@@ -2,7 +2,9 @@ package com.addon.room360.fragments;
 
 
 import android.app.DatePickerDialog;
-import android.app.Dialog;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,10 +16,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.addon.room360.BookedClass;
 import com.addon.room360.R;
+import com.addon.room360.data.RoomContract;
+import com.addon.room360.data.RoomDbHelper;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class BookingTabFragment extends Fragment implements View.OnClickListener {
@@ -30,13 +38,13 @@ public class BookingTabFragment extends Fragment implements View.OnClickListener
     private int smonth;
     private int sday;
 
+public  ArrayList<BookedClass> bookinginfo= new ArrayList<>();
     public BookingTabFragment() {
 
     }
 
-    TextView  checkin, checkout, bookinDate, PlannedDate,checkindate,checkoutdate;
-
-
+    TextView  checkin, checkout, bookinDate, PlannedDate,checkindate,checkoutdate, Adult, kids;
+Button Booknow;
     @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
     @Nullable
 
@@ -48,8 +56,10 @@ public class BookingTabFragment extends Fragment implements View.OnClickListener
         TextView Plan = view.findViewById(R.id.plancheck);
 checkindate = view.findViewById(R.id.checkindate);
         checkoutdate = view.findViewById(R.id.checkcoutdate);
+        Adult= view.findViewById(R.id.Adult);
+        kids = view.findViewById(R.id.Kids);
         book.setOnClickListener(this);
-
+        Booknow =view.findViewById(R.id.booknow);
         Plan.setOnClickListener(this) ;
         bookinDate = view.findViewById(R.id.bookcheck);
 
@@ -58,6 +68,14 @@ checkindate = view.findViewById(R.id.checkindate);
         checkin.setOnClickListener(this);
         checkout = view.findViewById(R.id.checkOut);
         checkout.setOnClickListener(this);
+
+Booknow.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Adddata();
+
+    }
+});
 
         return view;
 
@@ -143,6 +161,11 @@ checkindate = view.findViewById(R.id.checkindate);
 
 
     }
+
+public void  Adddata(){
+bookinginfo.add(new BookedClass(bookinDate.getText().toString(), PlannedDate.getText().toString(),checkindate.getText().toString(),checkoutdate.getText().toString(),Adult.getText().toString(),kids.getText().toString()));
+    Toast.makeText(getContext(), "Success fully booked for the =  " + bookinginfo.get(0).getBookingdate() + "\n Plannedcheckindate = " + bookinginfo.get(0).Plancheckdate, Toast.LENGTH_SHORT).show();
+}
 }
 
 

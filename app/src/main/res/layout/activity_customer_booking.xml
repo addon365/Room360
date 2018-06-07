@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:text="101"
+            android:id="@+id/Room_customer"
             android:gravity="center"
 
             android:textSize="20sp"

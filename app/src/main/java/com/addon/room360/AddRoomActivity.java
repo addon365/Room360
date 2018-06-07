@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class AddRoomActivity extends AppCompatActivity {
 
@@ -14,13 +15,21 @@ public class AddRoomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_room);
-
+        final TextView roomno = findViewById(R.id.Room_no);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         Button btn = (Button) findViewById(R.id.btn);
+Intent inte = getIntent();
+String room = Integer.valueOf(inte.getIntExtra("Room", 0)).toString();
+roomno.setText(room);
+//String room = bundle.getString("Room_No");
+
+//roomno.setText(room);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AddRoomActivity.this, AddCusomer.class);
+                Intent i = new Intent(AddRoomActivity.this, CustomerBookingActivity.class);
+                i.putExtra("Room", roomno.getText() );
+
                 startActivity(i);
             }
         });

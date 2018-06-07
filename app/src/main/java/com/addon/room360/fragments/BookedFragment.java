@@ -40,7 +40,7 @@ public class BookedFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.booked, container, false);
-        ArrayList<BookedClass> arry = new ArrayList<BookedClass>();
+        final ArrayList<BookedClass> arry = new ArrayList<BookedClass>();
 
         arry.add(new BookedClass(101, "AC", 3));
         arry.add(new BookedClass(102, "NON AC", 2));
@@ -66,9 +66,9 @@ public class BookedFragment extends Fragment {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getActivity(), AddRoomActivity.class);
-
-                startActivity(i);
+        Intent intent = new Intent(getActivity().getBaseContext(),AddRoomActivity.class);
+        intent.putExtra("Room", arry.get(position).getRoomNumber());
+        startActivity(intent);
             }
         });
         return view;

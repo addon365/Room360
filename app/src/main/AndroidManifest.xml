@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".AddRoomActivity" />
         <activity android:name=".AddCusomer" />
-        <activity android:name=".CustomerBookingActivity"></activity>
+        <activity android:name=".CustomerBookingActivity" />
+        <activity android:name=".Details_Activity"></activity>
     </application>
 
 </manifest>

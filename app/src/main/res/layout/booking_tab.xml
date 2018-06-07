@@ -223,6 +223,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/kids_text"
             android:text="Book Now"
+            android:id="@+id/booknow"
             android:textAllCaps="false"
             android:layout_marginTop="15dp"
             android:textColor="@android:color/white"
